@@ -1845,7 +1845,7 @@ events:
         - 103
         - 0
         - 0
-        - 4
+        - 6
       - !ruby/object:RPG::EventCommand
         code: 201
         indent: 0

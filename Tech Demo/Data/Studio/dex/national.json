@@ -3239,6 +3239,10 @@
     {
       "dbSymbol": "l_monkey",
       "form": 0
+    },
+    {
+      "dbSymbol": "giant_panda",
+      "form": 0
     }
   ]
 }

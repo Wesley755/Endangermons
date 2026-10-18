@@ -295,6 +295,16 @@ events:
         indent: 0
         parameters: []
       - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 0
+        parameters:
+        - 'Level 1: Bamboo Forest. There is no elevator door on that map,'
+      - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
+        parameters:
+        - so the screen tone is restored here after the transfer.
+      - !ruby/object:RPG::EventCommand
         code: 111
         indent: 0
         parameters:
@@ -304,30 +314,68 @@ events:
         - 2
         - 0
       - !ruby/object:RPG::EventCommand
-        code: 108
-        indent: 1
-        parameters:
-        - This command turns on the self switch on the hub door to
-      - !ruby/object:RPG::EventCommand
-        code: 408
-        indent: 1
-        parameters:
-        - enable the opening animation.
-      - !ruby/object:RPG::EventCommand
-        code: 355
-        indent: 1
-        parameters:
-        - set_self_switch(true,"A",2,map_id = 5)
-      - !ruby/object:RPG::EventCommand
         code: 201
         indent: 1
         parameters:
         - 0
-        - 5
-        - 33
-        - 15
-        - 0
+        - 23
+        - 27
+        - 61
+        - 8
         - 1
+      - !ruby/object:RPG::EventCommand
+        code: 209
+        indent: 1
+        parameters:
+        - -1
+        - !ruby/object:RPG::MoveRoute
+          list:
+          - &3 !ruby/object:RPG::MoveCommand
+            code: 42
+            parameters:
+            - 255
+          - &4 !ruby/object:RPG::MoveCommand
+            code: 38
+            parameters: []
+          - !ruby/object:RPG::MoveCommand
+            code: 0
+            parameters: []
+          repeat: false
+          skippable: false
+      - !ruby/object:RPG::EventCommand
+        code: 509
+        indent: 1
+        parameters:
+        - *3
+      - !ruby/object:RPG::EventCommand
+        code: 509
+        indent: 1
+        parameters:
+        - *4
+      - !ruby/object:RPG::EventCommand
+        code: 210
+        indent: 1
+        parameters: []
+      - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 1
+        parameters:
+        - 5
+      - !ruby/object:RPG::EventCommand
+        code: 223
+        indent: 1
+        parameters:
+        - !ruby/object:Tone
+          red: 0
+          green: 0
+          blue: 0
+          gray: 0
+        - 10
+      - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 1
+        parameters:
+        - Yuki::FollowMe.smart_enable
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -359,13 +407,20 @@ events:
         code: 355
         indent: 1
         parameters:
-        - set_self_switch(true,"A",2,map_id = 6)
+        - set_self_switch(true,"A",2,map_id = 9)
+      - !ruby/object:RPG::EventCommand
+        code: 236
+        indent: 1
+        parameters:
+        - 3
+        - 7
+        - 0
       - !ruby/object:RPG::EventCommand
         code: 201
         indent: 1
         parameters:
         - 0
-        - 6
+        - 9
         - 33
         - 15
         - 0
@@ -401,13 +456,13 @@ events:
         code: 355
         indent: 1
         parameters:
-        - set_self_switch(true,"A",2,map_id = 7)
+        - set_self_switch(true,"A",2,map_id = 6)
       - !ruby/object:RPG::EventCommand
         code: 201
         indent: 1
         parameters:
         - 0
-        - 7
+        - 6
         - 33
         - 15
         - 0
@@ -485,104 +540,13 @@ events:
         code: 355
         indent: 1
         parameters:
-        - set_self_switch(true,"A",2,map_id = 9)
-      - !ruby/object:RPG::EventCommand
-        code: 236
-        indent: 1
-        parameters:
-        - 3
-        - 7
-        - 0
+        - set_self_switch(true,"A",2,map_id = 7)
       - !ruby/object:RPG::EventCommand
         code: 201
         indent: 1
         parameters:
-        - 0
-        - 9
-        - 33
-        - 15
-        - 0
-        - 1
-      - !ruby/object:RPG::EventCommand
-        code: 0
-        indent: 1
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 412
-        indent: 0
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 111
-        indent: 0
-        parameters:
-        - 1
-        - 103
         - 0
         - 7
-        - 0
-      - !ruby/object:RPG::EventCommand
-        code: 108
-        indent: 1
-        parameters:
-        - This command turns on the self switch on the hub door to
-      - !ruby/object:RPG::EventCommand
-        code: 408
-        indent: 1
-        parameters:
-        - enable the opening animation.
-      - !ruby/object:RPG::EventCommand
-        code: 355
-        indent: 1
-        parameters:
-        - set_self_switch(true,"A",2,map_id = 10)
-      - !ruby/object:RPG::EventCommand
-        code: 201
-        indent: 1
-        parameters:
-        - 0
-        - 10
-        - 33
-        - 15
-        - 0
-        - 1
-      - !ruby/object:RPG::EventCommand
-        code: 0
-        indent: 1
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 412
-        indent: 0
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 111
-        indent: 0
-        parameters:
-        - 1
-        - 103
-        - 0
-        - 8
-        - 0
-      - !ruby/object:RPG::EventCommand
-        code: 108
-        indent: 1
-        parameters:
-        - This command turns on the self switch on the hub door to
-      - !ruby/object:RPG::EventCommand
-        code: 408
-        indent: 1
-        parameters:
-        - enable the opening animation.
-      - !ruby/object:RPG::EventCommand
-        code: 355
-        indent: 1
-        parameters:
-        - set_self_switch(true,"A",2,map_id = 11)
-      - !ruby/object:RPG::EventCommand
-        code: 201
-        indent: 1
-        parameters:
-        - 0
-        - 11
         - 33
         - 15
         - 0
@@ -676,7 +640,7 @@ events:
         - 1
         - !ruby/object:RPG::MoveRoute
           list:
-          - &3 !ruby/object:RPG::MoveCommand
+          - &5 !ruby/object:RPG::MoveCommand
             code: 42
             parameters:
             - 255
@@ -689,7 +653,7 @@ events:
         code: 509
         indent: 2
         parameters:
-        - *3
+        - *5
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 2
@@ -705,7 +669,7 @@ events:
         - 1
         - !ruby/object:RPG::MoveRoute
           list:
-          - &4 !ruby/object:RPG::MoveCommand
+          - &6 !ruby/object:RPG::MoveCommand
             code: 42
             parameters:
             - 0
@@ -718,7 +682,7 @@ events:
         code: 509
         indent: 2
         parameters:
-        - *4
+        - *6
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 2
@@ -742,7 +706,7 @@ events:
         - 1
         - !ruby/object:RPG::MoveRoute
           list:
-          - &5 !ruby/object:RPG::MoveCommand
+          - &7 !ruby/object:RPG::MoveCommand
             code: 42
             parameters:
             - 0
@@ -755,7 +719,7 @@ events:
         code: 509
         indent: 1
         parameters:
-        - *5
+        - *7
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -834,7 +798,7 @@ events:
         code: 408
         indent: 0
         parameters:
-        - 'The second number indicates how many answer there are (here: 8).'
+        - 'The second number indicates which answer cancels (here: 7 = Return).'
       - !ruby/object:RPG::EventCommand
         code: 408
         indent: 0
@@ -844,57 +808,47 @@ events:
         code: 355
         indent: 0
         parameters:
-        - 'choice(26, 9, "4, 20 1: Main Hall",'
+        - choice(26, 7, "Main Hall",
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
         parameters:
-        - '"4, 21 2: Prairie Stream",'
+        - '"Level 1: Bamboo Forest",'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
         parameters:
-        - '"4, 22 3: Turbulent Creek",'
+        - '"Level 2: Tundra",'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
         parameters:
-        - '"4, 23 4: Rocky Cavern",'
+        - '"Level 3: Beach",'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
         parameters:
-        - '"4, 24 5: Ashen Marsh",'
+        - '"Level 4: Marsh",'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
         parameters:
-        - '"4, 25 6: Icy Tundra",'
+        - '"Level 5: Cave",'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
         parameters:
-        - '"4, 26 7: Built Road",'
-      - !ruby/object:RPG::EventCommand
-        code: 655
-        indent: 0
-        parameters:
-        - '"4, 27 8: Shady Facility",'
-      - !ruby/object:RPG::EventCommand
-        code: 655
-        indent: 0
-        parameters:
-        - '"4, 28 Return")'
+        - '"Return")'
       - !ruby/object:RPG::EventCommand
         code: 101
         indent: 0
         parameters:
-        - 4, 0 We are currently on floor \v[103].
+        - Welcome aboard! Which level may I
       - !ruby/object:RPG::EventCommand
         code: 401
         indent: 0
         parameters:
-        - Which environment may I take you to?
+        - take you to?
       - !ruby/object:RPG::EventCommand
         code: 108
         indent: 0
@@ -917,7 +871,7 @@ events:
         - 1
         - 26
         - 0
-        - 9
+        - 7
         - 5
       - !ruby/object:RPG::EventCommand
         code: 111
@@ -982,10 +936,10 @@ events:
         - 0
         - !ruby/object:RPG::MoveRoute
           list:
-          - &6 !ruby/object:RPG::MoveCommand
+          - &8 !ruby/object:RPG::MoveCommand
             code: 16
             parameters: []
-          - &7 !ruby/object:RPG::MoveCommand
+          - &9 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 20
@@ -998,12 +952,12 @@ events:
         code: 509
         indent: 2
         parameters:
-        - *6
+        - *8
       - !ruby/object:RPG::EventCommand
         code: 509
         indent: 2
         parameters:
-        - *7
+        - *9
       - !ruby/object:RPG::EventCommand
         code: 210
         indent: 2
@@ -1097,10 +1051,10 @@ events:
         - 0
         - !ruby/object:RPG::MoveRoute
           list:
-          - &8 !ruby/object:RPG::MoveCommand
+          - &10 !ruby/object:RPG::MoveCommand
             code: 16
             parameters: []
-          - &9 !ruby/object:RPG::MoveCommand
+          - &11 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 20
@@ -1113,12 +1067,12 @@ events:
         code: 509
         indent: 2
         parameters:
-        - *8
+        - *10
       - !ruby/object:RPG::EventCommand
         code: 509
         indent: 2
         parameters:
-        - *9
+        - *11
       - !ruby/object:RPG::EventCommand
         code: 210
         indent: 2
@@ -1291,10 +1245,10 @@ events:
         - 0
         - !ruby/object:RPG::MoveRoute
           list:
-          - &10 !ruby/object:RPG::MoveCommand
+          - &12 !ruby/object:RPG::MoveCommand
             code: 25
             parameters: []
-          - &11 !ruby/object:RPG::MoveCommand
+          - &13 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 20
@@ -1307,12 +1261,12 @@ events:
         code: 509
         indent: 0
         parameters:
-        - *10
+        - *12
       - !ruby/object:RPG::EventCommand
         code: 509
         indent: 0
         parameters:
-        - *11
+        - *13
       - !ruby/object:RPG::EventCommand
         code: 210
         indent: 0
@@ -1330,7 +1284,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 4 The first floor has the Main Hall.
+        - Main Hall.
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1352,7 +1306,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 5 The second floor has the Prairie Stream.
+        - 'Level 1: the Bamboo Forest.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1374,7 +1328,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 6 The third floor has the Turbulent Creek.
+        - 'Level 2: the Tundra.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1396,7 +1350,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 7 The fourth floor has the Rocky Cavern.
+        - 'Level 3: the Beach.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1418,7 +1372,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 8 The fifth floor has the Ashen Marsh.
+        - 'Level 4: the Marsh.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1440,51 +1394,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 9 The sixth floor has the Icy Tundra.
-      - !ruby/object:RPG::EventCommand
-        code: 0
-        indent: 1
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 412
-        indent: 0
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 111
-        indent: 0
-        parameters:
-        - 1
-        - 103
-        - 0
-        - 7
-        - 0
-      - !ruby/object:RPG::EventCommand
-        code: 101
-        indent: 1
-        parameters:
-        - 4, 10 The seventh floor has the Built Road.
-      - !ruby/object:RPG::EventCommand
-        code: 0
-        indent: 1
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 412
-        indent: 0
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 111
-        indent: 0
-        parameters:
-        - 1
-        - 103
-        - 0
-        - 8
-        - 0
-      - !ruby/object:RPG::EventCommand
-        code: 101
-        indent: 1
-        parameters:
-        - 4, 11 The eighth floor has the Shady Facility.
+        - 'Level 5: the Cave.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1611,10 +1521,10 @@ events:
         - 0
         - !ruby/object:RPG::MoveRoute
           list:
-          - &12 !ruby/object:RPG::MoveCommand
+          - &14 !ruby/object:RPG::MoveCommand
             code: 25
             parameters: []
-          - &13 !ruby/object:RPG::MoveCommand
+          - &15 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 20
@@ -1627,12 +1537,12 @@ events:
         code: 509
         indent: 0
         parameters:
-        - *12
+        - *14
       - !ruby/object:RPG::EventCommand
         code: 509
         indent: 0
         parameters:
-        - *13
+        - *15
       - !ruby/object:RPG::EventCommand
         code: 210
         indent: 0
@@ -1650,7 +1560,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 12 The first floor has the Main Hall.
+        - Main Hall.
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1672,7 +1582,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 13 The second floor has the Prairie Stream.
+        - 'Level 1: the Bamboo Forest.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1694,7 +1604,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 14 The third floor has the Turbulent Creek.
+        - 'Level 2: the Tundra.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1716,7 +1626,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 15 The fourth floor has the Rocky Cavern.
+        - 'Level 3: the Beach.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1738,7 +1648,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 16 The fifth floor has the Ashen Marsh.
+        - 'Level 4: the Marsh.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1
@@ -1760,51 +1670,7 @@ events:
         code: 101
         indent: 1
         parameters:
-        - 4, 17 The sixth floor has the Icy Tundra.
-      - !ruby/object:RPG::EventCommand
-        code: 0
-        indent: 1
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 412
-        indent: 0
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 111
-        indent: 0
-        parameters:
-        - 1
-        - 103
-        - 0
-        - 7
-        - 0
-      - !ruby/object:RPG::EventCommand
-        code: 101
-        indent: 1
-        parameters:
-        - 4, 18 The seventh floor has the Built Road.
-      - !ruby/object:RPG::EventCommand
-        code: 0
-        indent: 1
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 412
-        indent: 0
-        parameters: []
-      - !ruby/object:RPG::EventCommand
-        code: 111
-        indent: 0
-        parameters:
-        - 1
-        - 103
-        - 0
-        - 8
-        - 0
-      - !ruby/object:RPG::EventCommand
-        code: 101
-        indent: 1
-        parameters:
-        - 4, 19 The eighth floor has the Shady Facility.
+        - 'Level 5: the Cave.'
       - !ruby/object:RPG::EventCommand
         code: 0
         indent: 1

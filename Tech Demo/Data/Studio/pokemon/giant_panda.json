@@ -1,0 +1,91 @@
+{
+  "klass": "Specie",
+  "id": 809,
+  "dbSymbol": "giant_panda",
+  "forms": [
+    {
+      "form": 0,
+      "formTextId": {
+        "name": 1054,
+        "description": 0
+      },
+      "height": 1.5,
+      "weight": 100,
+      "type1": "normal",
+      "type2": "__undef__",
+      "baseHp": 110,
+      "baseAtk": 80,
+      "baseDfe": 80,
+      "baseSpd": 30,
+      "baseAts": 50,
+      "baseDfs": 70,
+      "evHp": 1,
+      "evAtk": 0,
+      "evDfe": 0,
+      "evSpd": 0,
+      "evAts": 0,
+      "evDfs": 0,
+      "evolutions": [],
+      "experienceType": 2,
+      "baseExperience": 60,
+      "baseLoyalty": 70,
+      "catchRate": 200,
+      "femaleRate": 50,
+      "breedGroups": [
+        15,
+        15
+      ],
+      "hatchSteps": 1024,
+      "babyDbSymbol": "giant_panda",
+      "babyForm": 0,
+      "itemHeld": [
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        },
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        }
+      ],
+      "abilities": [
+        "thick_fat",
+        "thick_fat",
+        "__undef__"
+      ],
+      "frontOffsetY": 0,
+      "resources": {
+        "icon": "panda",
+        "iconShiny": "",
+        "front": "panda_sick",
+        "frontShiny": "",
+        "back": "",
+        "backShiny": "",
+        "footprint": "",
+        "character": "panda",
+        "characterShiny": "",
+        "egg": "",
+        "iconEgg": "",
+        "cry": "0216.ogg",
+        "hasFemale": false
+      },
+      "moveSet": [
+        {
+          "klass": "LevelLearnableMove",
+          "move": "tackle",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "growl",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "rest",
+          "level": 1
+        }
+      ]
+    }
+  ]
+}

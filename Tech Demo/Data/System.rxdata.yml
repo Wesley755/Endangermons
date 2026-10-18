@@ -36,7 +36,7 @@ decision_se: !ruby/object:RPG::AudioFile
   name: select
   pitch: 100
   volume: 80
-edit_map_id: 14
+edit_map_id: 0
 elements:
 - ''
 - ''
@@ -61,7 +61,7 @@ load_se: !ruby/object:RPG::AudioFile
   name: select
   pitch: 100
   volume: 80
-magic_number: 13639214
+magic_number: 82644125
 party_members:
 - 1
 save_se: !ruby/object:RPG::AudioFile
