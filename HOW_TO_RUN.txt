@@ -1,6 +1,0 @@
-﻿Requires Node.js. From this folder:
-  node tiles.js out
-  node map.js out "<path to Tech Demo>/Data/Tiled"   (needs tiles.js output first; renders preview_map.png)
-  node panda.js out
-  node battleback.js out
-Outputs land in ./out using the same folder layout as the project.
