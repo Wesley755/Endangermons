@@ -97,6 +97,7 @@ module Battle
         @message_window.wait_input = true
         display_message_and_wait(throw_bait_message)
         $status = 'bait used'
+        @catch_rate_modifier = 510
       else
         @message_window.wait_input = true
         display_message_and_wait("You don't have the right bait!")
