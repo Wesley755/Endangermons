@@ -80,8 +80,10 @@ module Battle
     def observe
       if @safari_pokemon.db_symbol == :giant_panda
         if $status == 'bait used'
+          @message_window.wait_input = true
           display_message_and_wait('She seems to have calmed down significantly.')
         else
+          @message_window.wait_input = true
           display_message_and_wait('She is weak, but agitated. Maybe if she had something to eat, she would calm down...')
         end
       end
@@ -104,6 +106,7 @@ module Battle
 
     # changes for the animal's turn
     def pokemon_turn
+      @message_window.wait_input = true
       display_message_and_wait(check_status)
       @next_update = :player_action_choice
     end
