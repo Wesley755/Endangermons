@@ -69,7 +69,7 @@ You were overwhelmed by your defeat!,... ... [VAR TRNAME(0000)] est hors jeu !,
 "You got $[VAR 0205(0001,002C)] for winning!","[VAR TRNAME(0000)] remporte [VAR 0205(0001,202F)] $ !","Hai vinto [VAR 0205(0001,002E)] $!","Du gewinnst [VAR 0205(0001,002E)] $!","Has ganado [VAR 0205(0001,202F)] $ por vencer.","[VAR TRNAME(0000)][VAR 1900(0001)] 상금으로 [VAR 0205(0001,0000)]원을 손에 넣었다!","[VAR TRNAME(0000)]は　しょうきんとして [VAR 0205(0001,0000)]円　てにいれた！"
 "You picked up $[VAR 0204(0001,002C)]!","[VAR TRNAME(0000)] obtient [VAR 0204(0001,202F)] $ !","Hai raccolto [VAR 0204(0001,002E)] $!","Du hebst [VAR 0204(0001,002E)] $ auf!","Has recogido [VAR 0204(0001,202F)] $.","[VAR TRNAME(0000)][VAR 1900(0001)] [VAR 0204(0001,0000)]원을 주웠다!","[VAR TRNAME(0000)]は　[VAR 0204(0001,0000)]円　ひろった！"
 [VAR PKNICK(0000)] grew to Lv. [VAR NUM3(0001)]!,[VAR PKNICK(0000)] monte au N. [VAR NUM3(0001)] !,[VAR PKNICK(0000)] sale al livello [VAR NUM3(0001)]!,[VAR PKNICK(0000)] erreicht Lv. [VAR NUM3(0001)]!,[VAR PKNICK(0000)] ha subido al Nv. [VAR NUM3(0001)].,[VAR PKNICK(0000)][VAR 1900(0001)] 레벨 [VAR NUM3(0001)][VAR 1900(0005)]로 올랐다!,[VAR PKNICK(0000)]は レベル[VAR NUM3(0001)]　に　あがった！
-Oh no! The Pokémon broke free!,"Oh, non ! Le Pokémon s’est libéré !",Oh no! Il Pokémon è uscito dalla Poké Ball!,Mist! Das Pokémon hat sich befreit!,"¡Oh, no! ¡El Pokémon se ha escapado!",안 돼! 포켓몬이 볼에서 나와버렸다!,だめだ！　ポケモンが ボールから　でてしまった！
+Oh no! It broke free!,"Oh, non ! Le Pokémon s’est libéré !",Oh no! Il Pokémon è uscito dalla Poké Ball!,Mist! Das Pokémon hat sich befreit!,"¡Oh, no! ¡El Pokémon se ha escapado!",안 돼! 포켓몬이 볼에서 나와버렸다!,だめだ！　ポケモンが ボールから　でてしまった！
 Aww! It appeared to be caught!,Raaah ! Ça y était presque !,"Ah! Sembrava preso, eh? E invece no!",Oh! Fast hätte es geklappt!,¡Vaya! ¡Parecía que lo habías atrapado!,아아! 잡았다고 생각했는데!,ああ！ つかまえたと　おもったのに！
 Aargh! Almost had it!,Aaaaah ! Presque !,Per un pelo!,Mist! Das war knapp!,¡Qué pena! ¡Te ha faltado poco!,아쉽다! 조금만 더 하면 잡을 수 있었는데!,ざんねん！ もうすこしで　つかまえられたのに！
 "Gah! It was so close, too!",Mince ! Ça y était presque !,Nooo! C’eri quasi!,Verflixt! Es hätte beinahe geklappt!,¡Uy! ¡Casi lo consigues!,아깝다! 조금만 더 하면 됐는데!,おしい！ あとちょっとの　ところだったのに！
@@ -370,10 +370,10 @@ I’ve never seen this Pokémon! Zzzt!,C’est quoi ce Pokémon ? Jamais vu !,
 [VAR TRNAME(0000)]! I’ve never seen this Pokémon! Zzzt!,[VAR TRNAME(0000)] ! C’est un Pokémon qu’on n’a jamais vu !,[VAR TRNAME(0000)]! Non ho mai visto questo Pokémon! Roto-tom!,"[VAR TRNAME(0000)]! Diesem Pokémon bin ich noch nie begegnet, brzzzt!","¡Mira, [VAR TRNAME(0000)]! ¡Nunca había visto a este Pokémon!",[VAR TRNAME(0000)]! 본 적 없는 포켓몬이다로토!,[VAR TRNAME(0000)]！ みたことない　ポケモン　ロト！
 [VAR TRNAME(0000)]! I’ve never seen this Pokémon! Zzzt!,[VAR TRNAME(0000)] ! C’est un Pokémon qu’on n’a jamais vu !,[VAR TRNAME(0000)]! Non ho mai visto questo Pokémon! Roto-tom!,"[VAR TRNAME(0000)]! Diesem Pokémon bin ich noch nie begegnet, brzzzt!","¡Mira, [VAR TRNAME(0000)]! ¡Nunca había visto a este Pokémon!",[VAR TRNAME(0000)]! 본 적 없는 포켓몬이다로토!,[VAR TRNAME(0000)]！ みたことない　ポケモン　ロト！
 [VAR 0189(0000)]! I’ve never seen this Pokémon! Zzzt!,[VAR 0189(0000)] ! C’est un Pokémon qu’on n’a jamais vu !,[VAR 0189(0000)]! Non ho mai visto questo Pokémon! Roto-tom!,"[VAR 0189(0000)]! Diesem Pokémon bin ich noch nie begegnet, brzzzt!","¡Mira, [VAR 0189(0000)]! ¡Nunca había visto a este Pokémon!",[VAR 0189(0000)]! 본 적 없는 포켓몬이다로토!,[VAR 0189(0000)]！ みたことない　ポケモン　ロト！
-"","","","","","",""
-"","","","","","",""
-"","","","","","",""
-"","","","","","",""
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
 Your chance of catching Pokémon increased!,Vos chances de capture augmentent !,Le probabilità di catturare i Pokémon sono aumentate!,"Die Wahrscheinlichkeit, Pokémon zu fangen, wurde erhöht!",¡Ahora te será más fácil atrapar Pokémon!,포켓몬을 잡기가 쉬워졌다!,ポケモンを　つかまえやすくなった！
 "Thanks to Rotom’s support, you can use Z-Power again!",Votre Motisma-Dex vous permet d’utiliser à nouveau la Force Z !,Grazie all’incoraggiamento di Rotom puoi usare di nuovo il Potere Z!,"Rotom ermöglicht es dir, die Z-Kraft noch mal einzusetzen!",¡Gracias al apoyo de Rotom puedes usar el Poder Z otra vez!,로토무의 응원으로 Z파워를 다시 사용할 수 있게 되었다!,ロトムの　おうえんで　Ｚパワーが もういちど　つかえるように　なった！
 Rotom Power unlocked! Zzz-zzzt!,Motism’Aura Motism-activée !,Potere Rotom attivato! Roto-tom!,"Rotom-Kraft wird aktiviert, brzzzt!",¡Poder Rotom disponible!,로토무파워~ 오픈한다로토~!,ロトムパワー　かいほうロトー！

@@ -65,9 +65,9 @@ module Battle
     # gives the "status" of the animal (text from the Observe action)
     def check_status
       if $status == 'bait used'
-        return 'you have used a bait on the creature!'
+        return 'The panda is tired, but no longer hungry.'
       else
-        return 'no status to report'
+        return 'The panda is tired and hungry.'
       end
     end
 
