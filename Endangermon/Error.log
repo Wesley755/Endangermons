@@ -1,5 +1,5 @@
 An error occured during Script Loading.
-Date : 18/10/2026 20:01:04
+Date : 28/10/2026 13:49:04
 Error type : Errno::ENOENT
 Error message : No such file or directory @ rb_sysopen - debug
 C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:106:in `gets'

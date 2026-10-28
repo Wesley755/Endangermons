@@ -97,8 +97,8 @@ module Battle
         @message_window.wait_input = true
         display_message_and_wait(throw_bait_message)
         $status = 'bait used'
-        @catch_rate_modifier = 10000
-        @catch_rate_modifier.clamp(9999, 10000)
+        @catch_rate_modifier = 100000000
+        log_debug('bait used')
       else
         @message_window.wait_input = true
         display_message_and_wait("You don't have the right bait!")
@@ -113,4 +113,14 @@ module Battle
       @next_update = :player_action_choice
     end
   end
+
+  class Logic
+    class CatchHandler  
+      add_ball_rate_calculation(:safari_ball) do |target, _pkm_ally|
+        next((target.rareness * 2)) if $status == 'bait used'
+        next(target.rareness)
+      end
+    end
+  end
 end
+

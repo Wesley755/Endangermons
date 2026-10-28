@@ -4,8 +4,7 @@
     "message_speed",
     "message_frame",
     "volume",
-    "battle_animation",
-    "battle_style",
-    "screen_scale"
+    "screen_scale",
+    "auto_run"
   ]
 }

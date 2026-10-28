@@ -1,1 +1,2 @@
-o:"Configs::Project::GameOptions:@order[:message_speed:message_frame:volume:battle_animation:battle_style:screen_scale
+o:"Configs::Project::GameOptions:@order[
+:message_speed:message_frame:volume:screen_scale:auto_run
