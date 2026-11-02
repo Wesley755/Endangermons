@@ -1,18 +1,18 @@
 {
-  "hpCount": 20,
-  "loyaltyMalus": 0,
-  "klass": "ConstantHealItem",
   "id": 114,
   "dbSymbol": "apple",
   "icon": "485",
   "price": 100,
-  "socket": 4,
+  "socket": 5,
   "position": 60,
-  "isBattleUsable": true,
-  "isMapUsable": true,
+  "isBattleUsable": false,
+  "isMapUsable": false,
   "isLimited": true,
-  "isHoldable": true,
+  "isHoldable": false,
   "isAllowingMega": false,
+  "flingPower": 30,
   "isBerry": false,
-  "flingPower": 30
+  "klass": "ConstantHealItem",
+  "loyaltyMalus": 0,
+  "hpCount": 20
 }
