@@ -1,22 +1,39 @@
-An error occured during Script Loading.
-Date : 28/10/2026 13:49:04
-Error type : Errno::ENOENT
-Error message : No such file or directory @ rb_sysopen - debug
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:106:in `gets'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:106:in `gets'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:106:in `rescue in block in load_scripts'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:92:in `block in load_scripts'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:91:in `each'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:91:in `load_scripts'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:82:in `load_vscode_scripts'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:83:in `block in load_vscode_scripts'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:83:in `each'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:83:in `load_vscode_scripts'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:42:in `start'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/tools/GameLoader/50_load_game_uncompiled.rb:7:in `<top (required)>'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:198:in `require'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:198:in `load_tool'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/tools/GameLoader/Z_load_uncompiled.rb:17:in `<top (required)>'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:198:in `require'
-C:/Users/wesle/AppData/Local/Programs/pokemon-studio/resources/psdk-binaries/pokemonsdk/scripts/ScriptLoad.rb:198:in `load_tool'
-Game.rb:11:in `<main>'
+================================Erreur de script================================
+Message :
+nil can't be coerced into Integer
+
+Type : TypeError
+Script : 4_Systems_000_General_4_UI_Generics.rb (PSDK)
+Ligne : 277
+Date : 06/11/2026 13:02:40
+Game Version : 0
+Logiciel : PSDK 26.61
+===================================Backtraces===================================
+[26] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 277 -
+[25] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 277 set_position
+[24] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 126 push
+[23] : 5_Battle_01_Scene.rb (PSDK) | ligne 2942 create_special_buttons
+[22] : 5_Battle_01_Scene.rb (PSDK) | ligne 2937 create_sprites
+[21] : 5_Battle_01_Scene.rb (PSDK) | ligne 2833 initialize
+[20] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 125 new
+[19] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 125 push
+[18] : 5_Battle_01_Scene.rb (PSDK) | ligne 2963 create_sub_choice
+[17] : 5_Battle_01_Scene.rb (PSDK) | ligne 2567 create_sprites
+[16] : 5_Battle_01_Scene.rb (PSDK) | ligne 2535 initialize
+[15] : 5_Battle_01_Scene.rb (PSDK) | ligne 2662 initialize
+[14] : 5_Battle_02_Visual.rb (PSDK) | ligne 280 new
+[13] : 5_Battle_02_Visual.rb (PSDK) | ligne 280 player_choice_class
+[12] : 5_Battle_02_Visual.rb (PSDK) | ligne 276 create_player_choice
+[11] : 5_Battle_02_Visual.rb (PSDK) | ligne 124 create_graphics
+[10] : 5_Battle_01_Scene.rb (PSDK) | ligne 62 main_begin
+[9] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 143 main
+[8] : tools/GameLoader/Z_main.rb (PSDK) | ligne 16 <top (required)>
+[7] : tools/GameLoader/3_load_extensions.rb (PSDK) | ligne 53 rgss_main
+[6] : tools/GameLoader/50_load_game_uncompiled.rb (PSDK) | ligne 53 <top (required)>
+[5] : ScriptLoad.rb (PSDK) | ligne 198 require
+[4] : ScriptLoad.rb (PSDK) | ligne 198 load_tool
+[3] : tools/GameLoader/Z_load_uncompiled.rb (PSDK) | ligne 17 <top (required)>
+[2] : ScriptLoad.rb (PSDK) | ligne 198 require
+[1] : ScriptLoad.rb (PSDK) | ligne 198 load_tool
+[0] : Game.rb (RMXP) | ligne 11 <main>
+===================================Fin du log===================================

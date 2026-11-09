@@ -3,7 +3,7 @@
   "dbSymbol": "safari_ball",
   "icon": "706",
   "price": 0,
-  "socket": 2,
+  "socket": 1,
   "position": 0,
   "isBattleUsable": true,
   "isMapUsable": false,

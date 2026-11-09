@@ -3,7 +3,7 @@
   "dbSymbol": "apple",
   "icon": "485",
   "price": 100,
-  "socket": 5,
+  "socket": 1,
   "position": 60,
   "isBattleUsable": false,
   "isMapUsable": false,
