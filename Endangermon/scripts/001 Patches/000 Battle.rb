@@ -122,5 +122,29 @@ module Battle
       end
     end
   end
+
+  # Dario Amodai is holding this game together like the boat in Spider-man: Homecoming
+  class Scene
+    PERMANENT_BOX_IMAGE = 'battle/message_box'
+
+    alias_method :permanent_box_original_main_begin, :main_begin
+    alias_method :permanent_box_original_dispose, :dispose
+
+    # Create the permanent message box image once the battle graphics exist
+    def main_begin
+      permanent_box_original_main_begin
+      @permanent_box = Sprite.new(@viewport)
+      @permanent_box.set_bitmap(PERMANENT_BOX_IMAGE, :interface)
+      @permanent_box.x = 0
+      @permanent_box.y = @viewport.rect.height - @permanent_box.height - 2 # bottom of the screen
+      @permanent_box.z = 0 # raise this if the box ends up behind battle sprites
+    end
+
+    # Dispose it with the scene
+    def dispose
+      @permanent_box.dispose if @permanent_box && !@permanent_box.disposed?
+      permanent_box_original_dispose
+    end
+  end
 end
 

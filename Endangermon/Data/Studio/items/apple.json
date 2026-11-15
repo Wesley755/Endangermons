@@ -7,7 +7,7 @@
   "position": 60,
   "isBattleUsable": false,
   "isMapUsable": false,
-  "isLimited": true,
+  "isLimited": false,
   "isHoldable": false,
   "isAllowingMega": false,
   "flingPower": 30,
