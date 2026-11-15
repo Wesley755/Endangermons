@@ -463,9 +463,9 @@ events:
         parameters:
         - 0
         - 6
-        - 33
-        - 15
-        - 0
+        - 4
+        - 14
+        - 6
         - 1
       - !ruby/object:RPG::EventCommand
         code: 0
