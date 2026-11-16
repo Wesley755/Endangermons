@@ -213,5 +213,6 @@
       "bgm": ""
     }
   },
-  "additionalDialogs": []
+  "additionalDialogs": [],
+  "classSymbol": "picknicker"
 }

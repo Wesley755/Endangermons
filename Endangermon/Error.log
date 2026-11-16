@@ -1,39 +1,53 @@
 ================================Erreur de script================================
 Message :
-nil can't be coerced into Integer
+undefined method `name' for nil:NilClass
 
-Type : TypeError
-Script : 4_Systems_000_General_4_UI_Generics.rb (PSDK)
-Ligne : 277
-Date : 06/11/2026 13:02:40
+Type : NoMethodError
+Script : 3_Studio.rb (PSDK)
+Ligne : 1425
+Date : 16/11/2026 10:19:27
 Game Version : 0
-Logiciel : PSDK 26.61
+Logiciel : PSDK 26.62
+Script used by eval command : 
+$game_temp.battleback_name = 'back_bamboo'
+$game_temp.battle_proc = proc { |n| $game_self_switches[[23, 37, 'A']] = true if [0, -1].include?(n); $game_map.need_refresh = true }
+$game_variables[Yuki::Var::BT_Mode] = 5
+call_battle_wild(:giant_panda, 5)
+$game_variables[Yuki::Var::BT_Mode] = 0
+
+
 ===================================Backtraces===================================
-[26] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 277 -
-[25] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 277 set_position
-[24] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 126 push
-[23] : 5_Battle_01_Scene.rb (PSDK) | ligne 2942 create_special_buttons
-[22] : 5_Battle_01_Scene.rb (PSDK) | ligne 2937 create_sprites
-[21] : 5_Battle_01_Scene.rb (PSDK) | ligne 2833 initialize
-[20] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 125 new
-[19] : 4_Systems_000_General_4_UI_Generics.rb (PSDK) | ligne 125 push
-[18] : 5_Battle_01_Scene.rb (PSDK) | ligne 2963 create_sub_choice
-[17] : 5_Battle_01_Scene.rb (PSDK) | ligne 2567 create_sprites
-[16] : 5_Battle_01_Scene.rb (PSDK) | ligne 2535 initialize
-[15] : 5_Battle_01_Scene.rb (PSDK) | ligne 2662 initialize
-[14] : 5_Battle_02_Visual.rb (PSDK) | ligne 280 new
-[13] : 5_Battle_02_Visual.rb (PSDK) | ligne 280 player_choice_class
-[12] : 5_Battle_02_Visual.rb (PSDK) | ligne 276 create_player_choice
-[11] : 5_Battle_02_Visual.rb (PSDK) | ligne 124 create_graphics
-[10] : 5_Battle_01_Scene.rb (PSDK) | ligne 62 main_begin
-[9] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 143 main
+[32] : 3_Studio.rb (PSDK) | ligne 1425 class_name
+[31] : 5_Battle_04_Logic.rb (PSDK) | ligne 1097 player_basic_info
+[30] : 4_Systems_999_Wild.rb (PSDK) | ligne 488 configure_battle
+[29] : 4_Systems_999_Wild.rb (PSDK) | ligne 151 setup
+[28] : 4_Systems_999_Wild.rb (PSDK) | ligne 120 start_battle
+[27] : 2_PSDK_Event_Interpreter.rb (PSDK) | ligne 362 call_battle_wild
+[26] : (eval) (RMXP) | ligne 5 eval_X17
+[25] : 1_RMXP_Scripts.rb (PSDK) | ligne 2145 eval_script
+[24] : 1_RMXP_Scripts.rb (PSDK) | ligne 2137 command_355
+[23] : 1_RMXP_Scripts.rb (PSDK) | ligne 1121 execute_command
+[22] : 1_RMXP_Scripts.rb (PSDK) | ligne 996 update
+[21] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 loop
+[20] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 update
+[19] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9285 update_map_logic
+[18] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 2933 update_map_logic
+[17] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9293 auto_transfert_update
+[16] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 loop
+[15] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 auto_transfert_update
+[14] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
+[13] : 0_Dependencies.rb (PSDK) | ligne 1435 times
+[12] : 0_Dependencies.rb (PSDK) | ligne 1435 run
+[11] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
+[10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process
+[9] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 144 main
 [8] : tools/GameLoader/Z_main.rb (PSDK) | ligne 16 <top (required)>
-[7] : tools/GameLoader/3_load_extensions.rb (PSDK) | ligne 53 rgss_main
+[7] : tools/GameLoader/3_load_extensions.rb (PSDK) | ligne 52 rgss_main
 [6] : tools/GameLoader/50_load_game_uncompiled.rb (PSDK) | ligne 53 <top (required)>
-[5] : ScriptLoad.rb (PSDK) | ligne 198 require
-[4] : ScriptLoad.rb (PSDK) | ligne 198 load_tool
+[5] : ScriptLoad.rb (PSDK) | ligne 218 require
+[4] : ScriptLoad.rb (PSDK) | ligne 218 load_tool
 [3] : tools/GameLoader/Z_load_uncompiled.rb (PSDK) | ligne 17 <top (required)>
-[2] : ScriptLoad.rb (PSDK) | ligne 198 require
-[1] : ScriptLoad.rb (PSDK) | ligne 198 load_tool
+[2] : ScriptLoad.rb (PSDK) | ligne 218 require
+[1] : ScriptLoad.rb (PSDK) | ligne 218 load_tool
 [0] : Game.rb (RMXP) | ligne 11 <main>
 ===================================Fin du log===================================

@@ -232,5 +232,6 @@
       "bgm": ""
     }
   },
-  "additionalDialogs": []
+  "additionalDialogs": [],
+  "classSymbol": "expert"
 }

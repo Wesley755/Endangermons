@@ -138,5 +138,6 @@
       "bgm": "xy_trainer_battle.ogg"
     }
   },
-  "additionalDialogs": []
+  "additionalDialogs": [],
+  "classSymbol": "scout"
 }

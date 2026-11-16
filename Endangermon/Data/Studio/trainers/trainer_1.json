@@ -166,5 +166,6 @@
       "bgm": ""
     }
   },
-  "additionalDialogs": []
+  "additionalDialogs": [],
+  "classSymbol": "ace_trainer"
 }

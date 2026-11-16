@@ -146,5 +146,6 @@
       "bgm": ""
     }
   },
-  "additionalDialogs": []
+  "additionalDialogs": [],
+  "classSymbol": "scout"
 }

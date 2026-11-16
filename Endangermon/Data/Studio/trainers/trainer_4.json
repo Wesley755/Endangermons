@@ -162,5 +162,6 @@
       "bgm": ""
     }
   },
-  "additionalDialogs": []
+  "additionalDialogs": [],
+  "classSymbol": "fairy_tale_girl"
 }
