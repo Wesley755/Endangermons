@@ -80,10 +80,12 @@ module Battle
     def observe
       if @safari_pokemon.db_symbol == :giant_panda
         if $status == 'bait used'
-          @message_window.wait_input = true
-          display_message_and_wait('She seems to have calmed down significantly.')
+          message_window.wait_input = true
+	  message_window.blocking = true
+          display_message('She seems to have calmed down significantly.')
         else
-          @message_window.wait_input = true
+          message_window.wait_input = true
+	  message_window.blocking = true
           display_message_and_wait('She is weak, but agitated. Maybe if she had something to eat, she would calm down...')
         end
       end
@@ -94,22 +96,25 @@ module Battle
       if $bag.contain_item?(preferred_bait)
         $bag.remove_item(preferred_bait, 1)
         @visual.show_bait_mud_animation(@safari_pokemon, :bait)
-        @message_window.wait_input = true
-        display_message_and_wait(throw_bait_message)
+        message_window.wait_input = true
+	message_window.blocking = true
+        display_message(throw_bait_message)
         $status = 'bait used'
         @catch_rate_modifier = 100000000
         log_debug('bait used')
       else
-        @message_window.wait_input = true
-        display_message_and_wait("You don't have the right bait!")
+        message_window.wait_input = true
+	message_window.blocking = true
+        display_message("You don't have the right bait!")
       end
       @next_update = :trigger_all_AI
     end
 
     # changes for the animal's turn
     def pokemon_turn
-      @message_window.wait_input = true
-      display_message_and_wait(check_status)
+      message_window.wait_input = true
+      message_window.blocking = true
+      display_message(check_status)
       @next_update = :player_action_choice
     end
   end
