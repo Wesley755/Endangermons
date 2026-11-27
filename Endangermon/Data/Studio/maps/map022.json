@@ -14,11 +14,11 @@
     "pitch": 100
   },
   "tiledFilename": "024 Fishing Boat Cabin",
-  "mtime": 1795379527193,
-  "sha1": "1561448762bb6888199bad0449af87955b0b0de3",
+  "mtime": 1795706436094,
+  "sha1": "9cad876642a59fff570d1c6502361029b42c71a4",
   "tileMetadata": {
     "width": 12,
-    "height": 9,
+    "height": 10,
     "tilesets": [
       {
         "firstGlobalId": 1,
@@ -59,6 +59,10 @@
       {
         "firstGlobalId": 10103,
         "source": "../Tilesets/Beach-Furniture.tsx"
+      },
+      {
+        "firstGlobalId": 10157,
+        "source": "../Tilesets/Original-Beach.tsx"
       }
     ],
     "tileByTileId": [
@@ -171,18 +175,15 @@
         {
           "globalId": 9530,
           "transformId": 0
-        },
-        {
-          "passage": 0
         }
       ],
       [
         {
-          "priority": 3
-        },
-        {
           "globalId": 9710,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
@@ -207,6 +208,12 @@
         {
           "globalId": 9532,
           "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 9712,
+          "transformId": 0
         },
         {
           "passage": 0
@@ -214,11 +221,20 @@
       ],
       [
         {
-          "priority": 3
+          "globalId": 9530,
+          "transformId": 0
         },
         {
-          "globalId": 9712,
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 9532,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
@@ -235,24 +251,15 @@
         {
           "globalId": 10014,
           "transformId": 0
-        },
-        {
-          "passage": 15
         }
       ],
       [
-        {
-          "priority": 3
-        },
         {
           "globalId": 9727,
           "transformId": 0
-        }
-      ],
-      [
+        },
         {
-          "globalId": 9530,
-          "transformId": 0
+          "passage": 15
         }
       ],
       [
@@ -267,12 +274,6 @@
       [
         {
           "globalId": 9531,
-          "transformId": 0
-        }
-      ],
-      [
-        {
-          "globalId": 9532,
           "transformId": 0
         }
       ],
@@ -300,7 +301,7 @@
           "transformId": 0
         },
         {
-          "passage": 0
+          "passage": 15
         }
       ],
       [
@@ -341,18 +342,15 @@
         {
           "globalId": 10024,
           "transformId": 0
-        },
-        {
-          "passage": 0
         }
       ],
       [
         {
-          "priority": 3
-        },
-        {
           "globalId": 9737,
           "transformId": 0
+        },
+        {
+          "passage": 15
         }
       ],
       [
@@ -367,7 +365,7 @@
           "transformId": 0
         },
         {
-          "passage": 0
+          "passage": 15
         }
       ],
       [
@@ -376,7 +374,7 @@
           "transformId": 0
         },
         {
-          "passage": 0
+          "passage": 15
         }
       ],
       [
@@ -495,29 +493,35 @@
       ],
       [
         {
-          "priority": 3
-        },
+          "globalId": 1664,
+          "transformId": 0
+        }
+      ],
+      [
         {
           "globalId": 10133,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
-        {
-          "priority": 3
-        },
         {
           "globalId": 10134,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
         {
-          "priority": 3
-        },
-        {
           "globalId": 10135,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
@@ -572,6 +576,12 @@
         {
           "globalId": 1674,
           "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 10142,
+          "transformId": 0
         },
         {
           "passage": 0
@@ -579,29 +589,20 @@
       ],
       [
         {
-          "priority": 3
-        },
-        {
-          "globalId": 10142,
-          "transformId": 0
-        }
-      ],
-      [
-        {
-          "priority": 3
-        },
-        {
           "globalId": 10143,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
-        {
-          "priority": 3
-        },
         {
           "globalId": 10144,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
@@ -624,29 +625,56 @@
       ],
       [
         {
-          "priority": 3
-        },
-        {
           "globalId": 10151,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
-        {
-          "priority": 3
-        },
         {
           "globalId": 10152,
           "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ],
       [
         {
-          "priority": 3
-        },
-        {
           "globalId": 10153,
           "transformId": 0
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 1170,
+          "transformId": 0
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 10357,
+          "transformId": 0
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 10358,
+          "transformId": 0
+        },
+        {
+          "passage": 0
         }
       ]
     ],
@@ -768,7 +796,7 @@
       ],
       [
         0,
-        13
+        19
       ],
       [
         0,
@@ -776,34 +804,34 @@
       ],
       [
         0,
-        17
+        20
       ],
       [
         0,
-        13
+        19
       ],
       [
         0,
         15
       ],
       [
-        19,
-        20,
-        21
-      ],
-      [
-        0,
+        21,
         22,
         23
       ],
       [
         0,
-        24,
-        23
+        13,
+        24
       ],
       [
         0,
         25,
+        24
+      ],
+      [
+        0,
+        17,
         26
       ],
       [
@@ -988,66 +1016,62 @@
       ],
       [
         0,
-        43,
-        51
-      ],
-      [
-        44,
+        51,
         52
       ],
       [
-        44,
+        0,
         53
       ],
       [
         0,
-        54,
-        55
+        54
       ],
       [
         0,
+        55,
         56
       ],
       [
         0,
-        57,
-        58
+        57
       ],
       [
         0,
+        58,
         59
       ],
       [
         0,
-        59
+        60
       ],
       [
         0,
-        59
+        60
       ],
       [
         0,
-        59
+        60
       ],
       [
         0,
-        59
+        60
       ],
       [
         0,
-        59
+        60
       ],
       [
         0,
-        60,
-        61
+        60
       ],
       [
-        44,
+        0,
+        61,
         62
       ],
       [
-        44,
+        0,
         63
       ],
       [
@@ -1057,6 +1081,10 @@
       [
         0,
         65
+      ],
+      [
+        0,
+        66
       ],
       [
         0,
@@ -1081,16 +1109,52 @@
         44
       ],
       [
-        44,
-        66
-      ],
-      [
-        44,
+        0,
         67
       ],
       [
-        44,
+        0,
         68
+      ],
+      [
+        0,
+        69
+      ],
+      [
+        70
+      ],
+      [
+        70
+      ],
+      [
+        70
+      ],
+      [
+        70
+      ],
+      [
+        70
+      ],
+      [
+        71
+      ],
+      [
+        72
+      ],
+      [
+        70
+      ],
+      [
+        70
+      ],
+      [
+        70
+      ],
+      [
+        70
+      ],
+      [
+        70
       ]
     ]
   }

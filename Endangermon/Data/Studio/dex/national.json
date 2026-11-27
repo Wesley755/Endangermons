@@ -11,6 +11,10 @@
     {
       "dbSymbol": "giant_panda",
       "form": 0
+    },
+    {
+      "dbSymbol": "h_turtle",
+      "form": 0
     }
   ]
 }

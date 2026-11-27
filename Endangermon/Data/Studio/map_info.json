@@ -24,7 +24,8 @@
       20,
       21,
       22,
-      23
+      23,
+      24
     ],
     "hasChildren": true,
     "isExpanded": true,
@@ -282,6 +283,17 @@
     "data": {
       "klass": "MapInfoMap",
       "mapDbSymbol": "map023",
+      "parentId": 0
+    }
+  },
+  "24": {
+    "id": 24,
+    "children": [],
+    "hasChildren": false,
+    "isExpanded": false,
+    "data": {
+      "klass": "MapInfoMap",
+      "mapDbSymbol": "map024",
       "parentId": 0
     }
   }

@@ -1,19 +1,23 @@
 ================================Erreur de script================================
 Message :
-undefined method `pbSetSelfSwitch' for #<Interpreter:0x10076a00>
+(eval):4: syntax error, unexpected local variable or method, expecting constant
+call_battle_wild(::h_turtle, 5)
+                   ^~~~~~~~
+(eval):4: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+call_battle_wild(::h_turtle, 5)
+                              ^
 
-Type : NoMethodError
-Script : (eval) (RMXP)
-Ligne : 2
-Date : 23/11/2026 10:45:46
-Game Version : 0
+
+Type : SyntaxError
+Script : tools/GameLoader/z_eval_killer.rb (PSDK)
+Ligne : 30
+Date : 26/11/2026 15:11:56
+Game Version : 1
 Logiciel : PSDK 26.62
-Script used by eval command : 
-pbSetSelfSwitch(10, "A", true)
-
-
 ===================================Backtraces===================================
-[26] : (eval) (RMXP) | ligne 2 eval_X5
+[28] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 30 class_eval
+[27] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 30 build_method
+[26] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 23 resolve_method_symbol
 [25] : 1_RMXP_Scripts.rb (PSDK) | ligne 2145 eval_script
 [24] : 1_RMXP_Scripts.rb (PSDK) | ligne 2137 command_355
 [23] : 1_RMXP_Scripts.rb (PSDK) | ligne 1121 execute_command
